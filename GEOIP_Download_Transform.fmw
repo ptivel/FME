@@ -1,0 +1,2465 @@
+#! <?xml version="1.0" encoding="utf-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    C:\apps\FME\fme.exe C:\Python_Scripts\Python\GEOIP_Download_Transform.fmw
+#    
+#    
+#! DOC_TOP_LEFT="-84 -2198"
+#! FME_DOCUMENT_GUID="30df74e7-82ec-467d-a490-1b7f32622191"
+#! FME_SERVER_SERVICES=""
+#! DESTINATION="NONE"
+#! REQUIREMENTS_KEYWORD=""
+#! END_PYTHON=""
+#! DESCRIPTION=""
+#! LAST_SAVE_DATE="2015-12-31T11:20:22"
+#! END_TCL=""
+#! SOURCE_ROUTING_FILE=""
+#! LEGAL_TERMS_CONDITIONS=""
+#! ATTR_TYPE_ENCODING="SDF"
+#! REDIRECT_TERMINATORS="NONE"
+#! TITLE=""
+#! ZOOM_SCALE="78"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_DOCUMENT_PRIORGUID="6282a016-a2e6-48f4-a2e5-fc176dac1432,3fde8cee-0c83-4599-851b-43372a104a9c,d2b7438d-ef56-4234-88e3-8a8d3968e503,d92190a8-fc82-4c68-93b1-8daeff76fbea,c93ab55d-e837-4215-bf9b-a0a1c8d1786f,4c127487-42d2-49ad-b8df-1aeef11b7816,c5b448ed-41dc-4286-9018-e0727e255e90,8928abf6-4d06-4743-bdd2-762b416a12fe,da11f314-d57f-4bd1-b98f-8efb534274c4,26962191-824a-4118-8367-067184a89d76,20ae909e-640e-499e-a03b-743080e1bf31,1ac40d7e-7750-4dd7-ae15-6c48bfda7288,162b966b-3ded-48a5-96d3-1201e1c138b0,6f64fd37-c9d0-45ad-b216-8e03e1354fdf,817e29b6-12a2-4946-916f-0177dd48080d,1734a2e8-6b98-4de8-8d6d-357be93b1586,56a0495f-14dd-4056-a4e3-d3743bdd1018,e824b140-046b-476c-8965-a310ea15861d"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! MAX_LOG_FEATURES="200"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! LOG_FILE=""
+#! CATEGORY=""
+#! BEGIN_TCL=""
+#! SHOW_ANNOTATIONS="true"
+#! HISTORY=""
+#! LOG_MAX_PRECISION="Yes"
+#! REQUIREMENTS=""
+#! WORKSPACE_VERSION="1"
+#! FME_STROKE_MAX_DEVIATION="0"
+#! LAST_SAVE_BUILD="FME(R) 2015.1.3.1 (20151117 - Build 15573 - WIN32)"
+#! FME_BUILD_NUM="15573"
+#! DOC_EXTENTS="4852.07 1881"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
+#! SHOW_INFO_NODES="true"
+#! USAGE=""
+#! VIEW_POSITION="-169.232 0"
+#! BEGIN_PYTHON=""
+#! SOURCE="NONE"
+#! IGNORE_READER_FAILURE="No"
+#! DESTINATION_ROUTING_FILE=""
+#! PASSWORD=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(144Loc)"
+#! KEYWORD="CSV_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_start_angle float fme_color text csv_number_of_fields number(11,0) fme_rotation float multi_reader_keyword text fme_type text csv_type char(50) fme_sweep_angle float fme_primary_axis float fme_basename text fme_secondary_axis float fme_geometry fme_char(50) csv_total_number_of_columns number(11,0) fme_text_string text multi_reader_full_id int fme_dataset text fme_text_size float fme_fill_color text multi_reader_id int multi_reader_type text fme_feature_type text csv_line_number number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! MIN_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(144_ISP)"
+#! KEYWORD="CSV_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_start_angle float fme_color text csv_number_of_fields number(11,0) fme_rotation float multi_reader_keyword text fme_type text csv_type char(50) fme_sweep_angle float fme_primary_axis float fme_basename text fme_secondary_axis float fme_geometry fme_char(50) csv_total_number_of_columns number(11,0) fme_text_string text multi_reader_full_id int fme_dataset text fme_text_size float fme_fill_color text multi_reader_id int multi_reader_type text fme_feature_type text csv_line_number number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! MIN_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(174_Domain)"
+#! KEYWORD="CSV_3"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_start_angle float fme_color text csv_number_of_fields number(11,0) fme_rotation float multi_reader_keyword text fme_type text csv_type char(50) fme_sweep_angle float fme_primary_axis float fme_basename text fme_secondary_axis float fme_geometry fme_char(50) csv_total_number_of_columns number(11,0) fme_text_string text multi_reader_full_id int fme_dataset text fme_text_size float fme_fill_color text multi_reader_id int multi_reader_type text fme_feature_type text csv_line_number number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! MIN_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(178_Net)"
+#! KEYWORD="CSV_4"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_start_angle float fme_color text csv_number_of_fields number(11,0) fme_rotation float multi_reader_keyword text fme_type text csv_type char(50) fme_sweep_angle float fme_primary_axis float fme_basename text fme_secondary_axis float fme_geometry fme_char(50) csv_total_number_of_columns number(11,0) fme_text_string text multi_reader_full_id int fme_dataset text fme_text_size float fme_fill_color text multi_reader_id int multi_reader_type text fme_feature_type text csv_line_number number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! MIN_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(172_Speed)"
+#! KEYWORD="CSV_5"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_start_angle float fme_color text csv_number_of_fields number(11,0) fme_rotation float multi_reader_keyword text fme_type text csv_type char(50) fme_sweep_angle float fme_primary_axis float fme_basename text fme_secondary_axis float fme_geometry fme_char(50) csv_total_number_of_columns number(11,0) fme_text_string text multi_reader_full_id int fme_dataset text fme_text_size float fme_fill_color text multi_reader_id int multi_reader_type text fme_feature_type text csv_line_number number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="14433"
+#! MIN_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="CSV"
+#! DATASET="$(DestDataset_CSV)"
+#! KEYWORD="CSV_6"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_primary_axis float fme_dataset text fme_fill_color text fme_feature_type text fme_type text fme_color text fme_text_size float fme_text_string text fme_basename text fme_secondary_axis float csv_type char(50) fme_start_angle float fme_sweep_angle float fme_geometry fme_char(50) fme_rotation float"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to file&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS="&quot;*{}$"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="15515"
+#! FANOUT_SUFFIX=""
+#! FANOUT_PREFIX=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! COORDSYS=""
+#! FANOUT_ID_ATTR=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="DEFAULT_ATTR_TYPE"
+#! VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_DATASET_HINT"
+#! VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_DEFAULT_NAME"
+#! VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="WRITER_DATASET_HINT"
+#! VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="x_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="y_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="z_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="auto"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="x_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="y_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="z_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="auto"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="21"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="-29 -965"
+#! BOUNDING_RECT="-29 -965 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_1"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="locId" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="country" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="region" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="city" ATTR_TYPE="char(27)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="postalCode" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="number(8,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="number(9,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="metroCode" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="areaCode" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="25"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="-47 -467"
+#! BOUNDING_RECT="-47 -467 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_2"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="startIpNum" ATTR_TYPE="number(9,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endIpNum" ATTR_TYPE="number(9,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="locId" ATTR_TYPE="number(7,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ISP" ATTR_TYPE="char(51)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="organization" ATTR_TYPE="char(51)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="27"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="-38.9995 -1342"
+#! BOUNDING_RECT="-38.9995 -1342 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_3"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="char(36)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="32"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="-2 -1703"
+#! BOUNDING_RECT="-2 -1703 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_4"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS="col2 col3"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col3" ATTR_TYPE="char(15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col4" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="49"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="24 -2198"
+#! BOUNDING_RECT="24 -2198 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_5"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="GEOIP_Complete"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="true"
+#! IDENTIFIER="36"
+#! FEAT_GEOMTYPE="All"
+#! POSITION="4768.07 -1173.84"
+#! BOUNDING_RECT="4768.07 -1173.84 0 0"
+#! ORDER="5e+014"
+#! COLLAPSED="false"
+#! KEYWORD="CSV_6"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="locId" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="country" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="region" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="city" ATTR_TYPE="char(27)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="postalCode" ATTR_TYPE="char(7)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="metroCode" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="areaCode" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="startIpNum" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endIpNum" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="startIpAdd" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endIpAdd" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="latitude" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="longitude" ATTR_TYPE="number(31,15)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ISP" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="org" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="domain" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="connection" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="speed" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="csv_append_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="csv_field_names" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM Location Python Script:"
+#! DEFAULT_VALUE="import&lt;space&gt;requests&lt;comma&gt;urllib2&lt;comma&gt;urllib&lt;comma&gt;re&lt;comma&gt;os&lt;comma&gt;zipfile&lt;comma&gt;shutil&lt;lf&gt;from&lt;space&gt;requests&lt;space&gt;import&lt;space&gt;session&lt;lf&gt;&lt;lf&gt;login_url1&lt;space&gt;=&lt;space&gt;&lt;apos&gt;https:&lt;solidus&gt;&lt;solidus&gt;www.maxmind.com&lt;solidus&gt;en&lt;solidus&gt;member&lt;apos&gt;&lt;lf&gt;login_url2&lt;space&gt;=&lt;space&gt;&lt;apos&gt;https:&lt;solidus&gt;&lt;solidus&gt;www.maxmind.com&lt;solidus&gt;en&lt;solidus&gt;download_files&lt;apos&gt;&lt;lf&gt;fileDir&lt;space&gt;=&lt;space&gt;&lt;apos&gt;C:&lt;solidus&gt;GEOIP&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;if&lt;space&gt;not&lt;space&gt;os.path.exists&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;os.makedirs&lt;openparen&gt;fileDir&lt;closeparen&gt;&lt;lf&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;shutil.rmtree&lt;openparen&gt;fileDir&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;os.makedirs&lt;openparen&gt;fileDir&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;payload&lt;space&gt;=&lt;space&gt;&lt;opencurly&gt;&lt;apos&gt;action&lt;apos&gt;:&lt;apos&gt;login&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;login&lt;apos&gt;:&lt;apos&gt;usernamehere&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;password&lt;apos&gt;:&lt;apos&gt;passwordhere&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;pkit_login&lt;apos&gt;:&lt;apos&gt;1&lt;apos&gt;&lt;comma&gt;&lt;apos&gt;pkit_done&lt;apos&gt;:r&lt;apos&gt;https:&lt;solidus&gt;&lt;solidus&gt;www.maxmind.com&lt;solidus&gt;en&lt;solidus&gt;account&lt;apos&gt;&lt;closecurly&gt;&lt;lf&gt;&lt;lf&gt;with&lt;space&gt;session&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;as&lt;space&gt;c:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;c.post&lt;openparen&gt;login_url1&lt;comma&gt;&lt;space&gt;data=payload&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;request&lt;space&gt;=&lt;space&gt;c.get&lt;openparen&gt;login_url2&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;webpage&lt;space&gt;=&lt;space&gt;request.text&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;myUrls&lt;space&gt;=&lt;space&gt;re.findall&lt;openparen&gt;r&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;download.maxmind.com&lt;solidus&gt;app&lt;solidus&gt;geoip_download.edition_id=174.*?.&lt;gt&gt;|https:&lt;solidus&gt;&lt;solidus&gt;download.maxmind.com&lt;solidus&gt;app&lt;solidus&gt;geoip_download.edition_id=144.*?.&lt;gt&gt;|https:&lt;solidus&gt;&lt;solidus&gt;download.maxmind.com&lt;solidus&gt;app&lt;solidus&gt;geoip_download.edition_id=178.*?.&lt;gt&gt;|https:&lt;solidus&gt;&lt;solidus&gt;download.maxmind.com&lt;solidus&gt;app&lt;solidus&gt;geoip_download.edition_id=172.*?.&lt;gt&gt;&lt;quote&gt;&lt;comma&gt;webpage&lt;closeparen&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;myUrls:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;item&lt;openbracket&gt;:-2&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;try:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#Downloading&lt;space&gt;Maxmind&lt;space&gt;Data&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;filePath&lt;space&gt;=&lt;space&gt;fileDir+&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;+item&lt;openbracket&gt;59:62&lt;closebracket&gt;+&lt;apos&gt;.zip&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;urllib.urlretrieve&lt;openparen&gt;item&lt;openbracket&gt;:-2&lt;closebracket&gt;&lt;comma&gt;filePath&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;fh&lt;space&gt;=&lt;space&gt;open&lt;openparen&gt;filePath&lt;comma&gt;&lt;space&gt;&lt;apos&gt;rb&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;z&lt;space&gt;=&lt;space&gt;zipfile.ZipFile&lt;openparen&gt;fh&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;name&lt;space&gt;in&lt;space&gt;z.namelist&lt;openparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#extract&lt;space&gt;only&lt;space&gt;csv&lt;space&gt;files&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;name&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;name&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outpath&lt;space&gt;=&lt;space&gt;fileDir&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;z.extract&lt;openparen&gt;name&lt;comma&gt;&lt;space&gt;outpath&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;fh.close&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;os.remove&lt;openparen&gt;filePath&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;except:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;item&lt;space&gt;+&lt;space&gt;&lt;quote&gt;&lt;space&gt;was&lt;space&gt;not&lt;space&gt;a&lt;space&gt;good&lt;space&gt;file&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;csvlist&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;for&lt;space&gt;root&lt;comma&gt;&lt;space&gt;dirs&lt;comma&gt;&lt;space&gt;files&lt;space&gt;in&lt;space&gt;os.walk&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;files:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;quote&gt;csv&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;csvlist.append&lt;openparen&gt;root+&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;+item&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;#use&lt;space&gt;in&lt;space&gt;FME&lt;space&gt;if&lt;space&gt;I&lt;space&gt;can&lt;space&gt;incorporate&lt;space&gt;&lt;openbracket&gt;144Location&lt;comma&gt;144ISP&lt;comma&gt;172speed&lt;comma&gt;174domain&lt;comma&gt;178net&lt;closebracket&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;csvlist:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-12:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Location.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;location&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-11:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Org-144.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;org&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-9:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Speed.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speed&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-10:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Domain.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;domain&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-13:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;SpeedCell.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speedcell&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;&lt;quote&gt;uh&lt;space&gt;oh&lt;comma&gt;&lt;space&gt;something&lt;space&gt;went&lt;space&gt;wrong&lt;space&gt;assigning&lt;space&gt;parameters&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;location&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;.join&lt;openparen&gt;location.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;location"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM Domain Python Script:"
+#! DEFAULT_VALUE="import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;fileDir&lt;space&gt;=&lt;space&gt;&lt;apos&gt;C:&lt;solidus&gt;GEOIP&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;csvlist&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;for&lt;space&gt;root&lt;comma&gt;&lt;space&gt;dirs&lt;comma&gt;&lt;space&gt;files&lt;space&gt;in&lt;space&gt;os.walk&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;files:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;quote&gt;csv&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;csvlist.append&lt;openparen&gt;root+&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;+item&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#print&lt;space&gt;root&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#print&lt;space&gt;files&lt;lf&gt;&lt;lf&gt;#use&lt;space&gt;in&lt;space&gt;FME&lt;space&gt;if&lt;space&gt;I&lt;space&gt;can&lt;space&gt;incorporate&lt;space&gt;&lt;openbracket&gt;144Location&lt;comma&gt;144ISP&lt;comma&gt;172speed&lt;comma&gt;174domain&lt;comma&gt;178net&lt;closebracket&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;csvlist:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-12:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Location.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;location&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-11:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Org-144.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;org&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-9:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Speed.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speed&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-10:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Domain.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;domain&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-13:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;SpeedCell.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speedcell&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;&lt;quote&gt;uh&lt;space&gt;oh&lt;comma&gt;&lt;space&gt;something&lt;space&gt;went&lt;space&gt;wrong&lt;space&gt;assigning&lt;space&gt;parameters&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;domain&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;.join&lt;openparen&gt;domain.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;domain"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM SpeedCell Python Script:"
+#! DEFAULT_VALUE="import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;fileDir&lt;space&gt;=&lt;space&gt;&lt;apos&gt;C:&lt;solidus&gt;GEOIP&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;csvlist&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;for&lt;space&gt;root&lt;comma&gt;&lt;space&gt;dirs&lt;comma&gt;&lt;space&gt;files&lt;space&gt;in&lt;space&gt;os.walk&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;files:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;quote&gt;csv&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;csvlist.append&lt;openparen&gt;root+&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;+item&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;#use&lt;space&gt;in&lt;space&gt;FME&lt;space&gt;if&lt;space&gt;I&lt;space&gt;can&lt;space&gt;incorporate&lt;space&gt;&lt;openbracket&gt;144Location&lt;comma&gt;144ISP&lt;comma&gt;172speed&lt;comma&gt;174domain&lt;comma&gt;178net&lt;closebracket&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;csvlist:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-12:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Location.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;location&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-11:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Org-144.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;org&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-9:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Speed.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speed&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-10:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Domain.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;domain&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-13:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;SpeedCell.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speedcell&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;&lt;quote&gt;uh&lt;space&gt;oh&lt;comma&gt;&lt;space&gt;something&lt;space&gt;went&lt;space&gt;wrong&lt;space&gt;assigning&lt;space&gt;parameters&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;speedcell&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;.join&lt;openparen&gt;speedcell.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;speedcell"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM Org Python Script:"
+#! DEFAULT_VALUE="import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;fileDir&lt;space&gt;=&lt;space&gt;&lt;apos&gt;C:&lt;solidus&gt;GEOIP&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;csvlist&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;for&lt;space&gt;root&lt;comma&gt;&lt;space&gt;dirs&lt;comma&gt;&lt;space&gt;files&lt;space&gt;in&lt;space&gt;os.walk&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;files:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;quote&gt;csv&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;csvlist.append&lt;openparen&gt;root+&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;+item&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;#use&lt;space&gt;in&lt;space&gt;FME&lt;space&gt;if&lt;space&gt;I&lt;space&gt;can&lt;space&gt;incorporate&lt;space&gt;&lt;openbracket&gt;144Location&lt;comma&gt;144ISP&lt;comma&gt;172speed&lt;comma&gt;174domain&lt;comma&gt;178net&lt;closebracket&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;csvlist:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-12:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Location.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;location&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-11:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Org-144.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;org&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-9:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Speed.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speed&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-10:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Domain.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;domain&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-13:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;SpeedCell.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speedcell&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;&lt;quote&gt;uh&lt;space&gt;oh&lt;comma&gt;&lt;space&gt;something&lt;space&gt;went&lt;space&gt;wrong&lt;space&gt;assigning&lt;space&gt;parameters&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;org&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;.join&lt;openparen&gt;org.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;org"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_EDIT_PYTHON_PARM Speed Python Script:"
+#! DEFAULT_VALUE="import&lt;space&gt;os&lt;lf&gt;&lt;lf&gt;fileDir&lt;space&gt;=&lt;space&gt;&lt;apos&gt;C:&lt;solidus&gt;GEOIP&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;csvlist&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;for&lt;space&gt;root&lt;comma&gt;&lt;space&gt;dirs&lt;comma&gt;&lt;space&gt;files&lt;space&gt;in&lt;space&gt;os.walk&lt;openparen&gt;fileDir&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;files:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-3:&lt;closebracket&gt;&lt;space&gt;==&lt;quote&gt;csv&lt;quote&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;csvlist.append&lt;openparen&gt;root+&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;+item&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;#use&lt;space&gt;in&lt;space&gt;FME&lt;space&gt;if&lt;space&gt;I&lt;space&gt;can&lt;space&gt;incorporate&lt;space&gt;&lt;openbracket&gt;144Location&lt;comma&gt;144ISP&lt;comma&gt;172speed&lt;comma&gt;174domain&lt;comma&gt;178net&lt;closebracket&gt;&lt;lf&gt;for&lt;space&gt;item&lt;space&gt;in&lt;space&gt;csvlist:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;item&lt;openbracket&gt;-12:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Location.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;location&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-11:&lt;closebracket&gt;&lt;space&gt;==&lt;apos&gt;Org-144.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;org&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-9:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Speed.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speed&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-10:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;Domain.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;domain&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;elif&lt;space&gt;item&lt;openbracket&gt;-13:&lt;closebracket&gt;&lt;space&gt;==&lt;space&gt;&lt;apos&gt;SpeedCell.csv&lt;apos&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;speedcell&lt;space&gt;=&lt;space&gt;item&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;else:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;space&gt;&lt;quote&gt;uh&lt;space&gt;oh&lt;comma&gt;&lt;space&gt;something&lt;space&gt;went&lt;space&gt;wrong&lt;space&gt;assigning&lt;space&gt;parameters&lt;quote&gt;&lt;lf&gt;&lt;lf&gt;speed&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;solidus&gt;&lt;apos&gt;.join&lt;openparen&gt;speed.split&lt;openparen&gt;&lt;apos&gt;&lt;backslash&gt;&lt;backslash&gt;&lt;apos&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;return&lt;space&gt;speed"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE MULTIFILE 144Loc CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 144 Loc File:"
+#! DEFAULT_VALUE="$(Location)"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE MULTIFILE 172_Speed CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 172 Speed File:"
+#! DEFAULT_VALUE="$(Speed)"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE MULTIFILE 144_ISP CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 144 ISP File:"
+#! DEFAULT_VALUE="$(Org)"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE MULTIFILE 174_Domain CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 174 Domain File:"
+#! DEFAULT_VALUE="$(Domain)"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE MULTIFILE 178_Net CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 178 Net Speed File:"
+#! DEFAULT_VALUE="$(SpeedCell)"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE DIRNAME DestDataset_CSV Destination CSV (CommaSeparatedValue) Folder:"
+#! DEFAULT_VALUE="C:\GEOIP"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="43"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CSV: GeoIPCityISPOrg-144 [CSV]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-84 -317"
+#! TOP_LEFT="-84 -317"
+#! BOTTOM_RIGHT="-84 -317"
+#! BOUNDING_RECT="-84 -317 0 -0"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="25"
+#! />
+#! <COMMENT
+#! IDENTIFIER="46"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CSV: GeoIPCity-144-Location [CSV]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-66 -815"
+#! TOP_LEFT="-66 -815"
+#! BOTTOM_RIGHT="-66 -815"
+#! BOUNDING_RECT="-66 -815 0 -0"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="21"
+#! />
+#! <COMMENT
+#! IDENTIFIER="47"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CSV: GeoIPDomain [CSV]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-72.9995 -1190"
+#! TOP_LEFT="-72.9995 -1190"
+#! BOTTOM_RIGHT="-72.9995 -1190"
+#! BOUNDING_RECT="-72.9995 -1190 0 -0"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="27"
+#! />
+#! <COMMENT
+#! IDENTIFIER="48"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CSV: GeoIPNetSpeedCell [CSV]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-36 -1550"
+#! TOP_LEFT="-36 -1550"
+#! BOTTOM_RIGHT="-36 -1550"
+#! BOUNDING_RECT="-36 -1550 0 -0"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="32"
+#! />
+#! <COMMENT
+#! IDENTIFIER="50"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CSV: GeoIPSpeed [CSV]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="-13 -2048"
+#! TOP_LEFT="-13 -2048"
+#! BOTTOM_RIGHT="-13 -2048"
+#! BOUNDING_RECT="-13 -2048 0 -0"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.192157"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="49"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="3"
+#! TYPE="FeatureMerger"
+#! VERSION="11"
+#! POSITION="1666 -628"
+#! BOUNDING_RECT="1666 -628 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="MERGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="NOT_MERGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="REFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="UNREFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <OUTPUT_FEAT NAME="DUPLICATE_SUPPLIER"/>
+#! <FEAT_COLLAPSED COLLAPSED="4"/>
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX_DUMMY" PARM_VALUE="YES"/>
+#! <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;locId&lt;closeparen&gt; &lt;at&gt;Value&lt;openparen&gt;locId&lt;closeparen&gt; AUTO"/>
+#! <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="11"
+#! TYPE="PythonCaller"
+#! VERSION="4"
+#! POSITION="3591 -1167"
+#! BOUNDING_RECT="3591 -1167 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="startIpAdd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpAdd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;def&lt;space&gt;ipMath&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;start&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;startIpNum&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;ipnum&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;start&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;o1&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum&lt;space&gt;&lt;solidus&gt;&lt;space&gt;16777216&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;o2&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum&lt;space&gt;&lt;solidus&gt;&lt;space&gt;65536&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;o3&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum&lt;space&gt;&lt;solidus&gt;&lt;space&gt;256&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;o4&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;address&lt;space&gt;=&lt;space&gt;&lt;openparen&gt;&lt;space&gt;str&lt;openparen&gt;o1&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;o2&lt;closeparen&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;o3&lt;closeparen&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;o4&lt;closeparen&gt;&lt;space&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;ipAddress&lt;space&gt;=&lt;space&gt;address&lt;openbracket&gt;0&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address&lt;openbracket&gt;2&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address&lt;openbracket&gt;3&lt;closebracket&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;startIpAdd&lt;quote&gt;&lt;comma&gt;&lt;space&gt;ipAddress&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;end&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;quote&gt;endIpNum&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;ipnum2&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;end&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p1&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum2&lt;space&gt;&lt;solidus&gt;&lt;space&gt;16777216&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p2&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum2&lt;space&gt;&lt;solidus&gt;&lt;space&gt;65536&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p3&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum2&lt;space&gt;&lt;solidus&gt;&lt;space&gt;256&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;p4&lt;space&gt;=&lt;space&gt;int&lt;openparen&gt;&lt;space&gt;ipnum2&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closeparen&gt;&lt;space&gt;%&lt;space&gt;256&lt;lf&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;address2&lt;space&gt;=&lt;space&gt;&lt;openparen&gt;&lt;space&gt;str&lt;openparen&gt;p1&lt;closeparen&gt;&lt;space&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;p2&lt;closeparen&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;p3&lt;closeparen&gt;+&lt;space&gt;&lt;apos&gt;.&lt;apos&gt;&lt;comma&gt;&lt;space&gt;str&lt;openparen&gt;p4&lt;closeparen&gt;&lt;space&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;ipAddress2&lt;space&gt;=&lt;space&gt;address2&lt;openbracket&gt;0&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address2&lt;openbracket&gt;1&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address2&lt;openbracket&gt;2&lt;closebracket&gt;&lt;space&gt;+&lt;space&gt;address2&lt;openbracket&gt;3&lt;closebracket&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;quote&gt;endIpAdd&lt;quote&gt;&lt;comma&gt;&lt;space&gt;ipAddress2&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="ipMath"/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="startIpAdd endIpAdd"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="28"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="1018 -1209"
+#! BOUNDING_RECT="1018 -1209 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="col0,startIpNum,&quot;&quot;,col1,endIpNum,&quot;&quot;,col2,domain,&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="30"
+#! TYPE="FeatureMerger"
+#! VERSION="11"
+#! POSITION="2448 -896"
+#! BOUNDING_RECT="2448 -896 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="MERGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="NOT_MERGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="country" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="city" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="postalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="latitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="longitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="metroCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="areaCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <OUTPUT_FEAT NAME="REFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#! <OUTPUT_FEAT NAME="UNREFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#! <OUTPUT_FEAT NAME="DUPLICATE_SUPPLIER"/>
+#! <FEAT_COLLAPSED COLLAPSED="4"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="domain" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#! <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX_DUMMY" PARM_VALUE="YES"/>
+#! <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;startIpNum&lt;closeparen&gt; &lt;at&gt;Value&lt;openparen&gt;startIpNum&lt;closeparen&gt; AUTO"/>
+#! <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="33"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="951 -1600"
+#! BOUNDING_RECT="951 -1600 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="connection" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="col0,startIpNum,&quot;&quot;,col1,endIpNum,&quot;&quot;,col4,connection,&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="51"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="946 -2148"
+#! BOUNDING_RECT="946 -2148 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="col0,startIpNum,&quot;&quot;,col1,endIpNum,&quot;&quot;,col2,speed,&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="57"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="889 -501"
+#! BOUNDING_RECT="889 -501 0 0"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="14433"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_ATTR ATTR_NAME="startIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="endIpNum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="locId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="ISP" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="org" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="organization,org,&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_4"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="20"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="31"
+#! SOURCE_NODE="28"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="59"
+#! SOURCE_NODE="57"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="61"
+#! SOURCE_NODE="33"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="62"
+#! SOURCE_NODE="51"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="54"
+#! SOURCE_NODE="30"
+#! TARGET_NODE="11"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="67"
+#! SOURCE_NODE="30"
+#! TARGET_NODE="11"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="24"
+#! SOURCE_NODE="21"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="29"
+#! SOURCE_NODE="27"
+#! TARGET_NODE="28"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="34"
+#! SOURCE_NODE="32"
+#! TARGET_NODE="33"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="52"
+#! SOURCE_NODE="49"
+#! TARGET_NODE="51"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="58"
+#! SOURCE_NODE="25"
+#! TARGET_NODE="57"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="37"
+#! SOURCE_NODE="11"
+#! TARGET_NODE="36"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_CSV_1,CSV_IN_NETWORK_AUTHENTICATION_CSV_1,CSV_IN_NETWORK_PROXY_CSV_1,_SKIP_LINES_CSV_1,_SKIP_FOOTER_CSV_1,_STRIP_QUOTES_CSV_1,_DUPLICATE_DELIMS_CSV_1,SORT_GROUP_CSV_1,_SORT_PARAMS_CSV_1,FILTER_GROUP_CSV_1,_FILTER_PARAMS_CSV_1,_ENCODING_CSV_1,SourceDataset_CSV_2,CSV_IN_NETWORK_AUTHENTICATION_CSV_2,CSV_IN_NETWORK_PROXY_CSV_2,_SKIP_LINES_CSV_2,_SKIP_FOOTER_CSV_2,_STRIP_QUOTES_CSV_2,_DUPLICATE_DELIMS_CSV_2,SORT_GROUP_CSV_2,_SORT_PARAMS_CSV_2,FILTER_GROUP_CSV_2,_FILTER_PARAMS_CSV_2,_ENCODING_CSV_2,SourceDataset_CSV_3,CSV_IN_NETWORK_AUTHENTICATION_CSV_3,CSV_IN_NETWORK_PROXY_CSV_3,_SKIP_LINES_CSV_3,_SKIP_FOOTER_CSV_3,_STRIP_QUOTES_CSV_3,_DUPLICATE_DELIMS_CSV_3,SORT_GROUP_CSV_3,_SORT_PARAMS_CSV_3,FILTER_GROUP_CSV_3,_FILTER_PARAMS_CSV_3,_ENCODING_CSV_3,SourceDataset_CSV_4,CSV_IN_NETWORK_AUTHENTICATION_CSV_4,CSV_IN_NETWORK_PROXY_CSV_4,_SKIP_LINES_CSV_4,_SKIP_FOOTER_CSV_4,_STRIP_QUOTES_CSV_4,_DUPLICATE_DELIMS_CSV_4,SORT_GROUP_CSV_4,_SORT_PARAMS_CSV_4,FILTER_GROUP_CSV_4,_FILTER_PARAMS_CSV_4,_ENCODING_CSV_4,SourceDataset_CSV_5,CSV_IN_NETWORK_AUTHENTICATION_CSV_5,CSV_IN_NETWORK_PROXY_CSV_5,_SKIP_LINES_CSV_5,_SKIP_FOOTER_CSV_5,_STRIP_QUOTES_CSV_5,_DUPLICATE_DELIMS_CSV_5,SORT_GROUP_CSV_5,_SORT_PARAMS_CSV_5,FILTER_GROUP_CSV_5,_FILTER_PARAMS_CSV_5,_ENCODING_CSV_5,DestDataset_CSV_6,CSV_OUT_EXTENSION_CSV_6,CSV_OUT_APPEND_CSV_6,CSV_OUT_FIELD_NAMES_CSV_6,CSV_OUT_SEPARATOR_CSV_6,CSV_OUT_ENCODING_CSV_6,CSV_OUT_WRITE_UTF8_BOM_CSV_6,CSV_OUT_QUOTE_OUTPUT_CSV_6,CSV_OUT_QUOTE_FIELD_NAMES_CSV_6,CSV_OUT_END_OF_LINE_CSV_6
+INCLUDE PYTHON
+def ParamFunc():
+  import requests,urllib2,urllib,re,os,zipfile,shutil
+  from requests import session
+  
+  login_url1 = 'https://www.maxmind.com/en/member'
+  login_url2 = 'https://www.maxmind.com/en/download_files'
+  fileDir = 'C:/GEOIP'
+  
+  if not os.path.exists(fileDir):
+      os.makedirs(fileDir)
+  else:
+      shutil.rmtree(fileDir)
+      os.makedirs(fileDir)
+  
+  payload = {'action':'login','login':'usernamehere','password':'passwordhere','pkit_login':'1','pkit_done':r'https://www.maxmind.com/en/account'}
+  
+  with session() as c:
+      c.post(login_url1, data=payload)
+      request = c.get(login_url2)
+      webpage = request.text
+      
+  
+  myUrls = re.findall(r"https://download.maxmind.com/app/geoip_download.edition_id=174.*?.>|https://download.maxmind.com/app/geoip_download.edition_id=144.*?.>|https://download.maxmind.com/app/geoip_download.edition_id=178.*?.>|https://download.maxmind.com/app/geoip_download.edition_id=172.*?.>",webpage)
+  for item in myUrls:
+      print item[:-2]
+  
+      try:
+          #Downloading Maxmind Data
+          filePath = fileDir+'/'+item[59:62]+'.zip'
+  
+          urllib.urlretrieve(item[:-2],filePath)
+          
+  
+          fh = open(filePath, 'rb')
+          z = zipfile.ZipFile(fh)
+          for name in z.namelist():
+              #extract only csv files
+              if name[-3:] == 'csv':
+                  print name
+                  outpath = fileDir
+                  z.extract(name, outpath)
+          fh.close()
+          os.remove(filePath)
+  
+      except:
+          item + " was not a good file"
+  
+  csvlist = []    
+  
+  for root, dirs, files in os.walk(fileDir):
+      for item in files:
+          if item[-3:] =="csv":
+              csvlist.append(root+'\\'+item)
+  
+  #use in FME if I can incorporate [144Location,144ISP,172speed,174domain,178net]
+  for item in csvlist:
+      if item[-12:] =='Location.csv':
+          location = item
+      elif item[-11:] =='Org-144.csv':
+          org = item
+      elif item[-9:] == 'Speed.csv':
+          speed = item
+      elif item[-10:] == 'Domain.csv':
+          domain = item
+      elif item[-13:] == 'SpeedCell.csv':
+          speedcell = item
+      else:
+          print "uh oh, something went wrong assigning parameters"
+  
+  location = '/'.join(location.split('\\'))
+  
+  return location
+value = ParamFunc()
+macroName = 'Location'
+if value == None:
+  return { macroName : '' }
+else:
+  return { macroName : str(value) }
+END_INCLUDE
+INCLUDE PYTHON
+def ParamFunc():
+  import os
+  
+  fileDir = 'C:/GEOIP'
+  
+  csvlist = []    
+  
+  for root, dirs, files in os.walk(fileDir):
+      for item in files:
+          if item[-3:] =="csv":
+              csvlist.append(root+'\\'+item)
+      #print root
+      #print files
+  
+  #use in FME if I can incorporate [144Location,144ISP,172speed,174domain,178net]
+  for item in csvlist:
+      if item[-12:] =='Location.csv':
+          location = item
+      elif item[-11:] =='Org-144.csv':
+          org = item
+      elif item[-9:] == 'Speed.csv':
+          speed = item
+      elif item[-10:] == 'Domain.csv':
+          domain = item
+      elif item[-13:] == 'SpeedCell.csv':
+          speedcell = item
+      else:
+          print "uh oh, something went wrong assigning parameters"
+  
+  
+  domain = '/'.join(domain.split('\\'))
+  
+  return domain
+value = ParamFunc()
+macroName = 'Domain'
+if value == None:
+  return { macroName : '' }
+else:
+  return { macroName : str(value) }
+END_INCLUDE
+INCLUDE PYTHON
+def ParamFunc():
+  import os
+  
+  fileDir = 'C:/GEOIP'
+  
+  
+  csvlist = []    
+  
+  for root, dirs, files in os.walk(fileDir):
+      for item in files:
+          if item[-3:] =="csv":
+              csvlist.append(root+'\\'+item)
+  
+  #use in FME if I can incorporate [144Location,144ISP,172speed,174domain,178net]
+  for item in csvlist:
+      if item[-12:] =='Location.csv':
+          location = item
+      elif item[-11:] =='Org-144.csv':
+          org = item
+      elif item[-9:] == 'Speed.csv':
+          speed = item
+      elif item[-10:] == 'Domain.csv':
+          domain = item
+      elif item[-13:] == 'SpeedCell.csv':
+          speedcell = item
+      else:
+          print "uh oh, something went wrong assigning parameters"
+  
+  
+  speedcell = '/'.join(speedcell.split('\\'))
+  
+  return speedcell
+value = ParamFunc()
+macroName = 'SpeedCell'
+if value == None:
+  return { macroName : '' }
+else:
+  return { macroName : str(value) }
+END_INCLUDE
+INCLUDE PYTHON
+def ParamFunc():
+  import os
+  
+  fileDir = 'C:/GEOIP'
+  
+  csvlist = []    
+  
+  for root, dirs, files in os.walk(fileDir):
+      for item in files:
+          if item[-3:] =="csv":
+              csvlist.append(root+'\\'+item)
+  
+  #use in FME if I can incorporate [144Location,144ISP,172speed,174domain,178net]
+  for item in csvlist:
+      if item[-12:] =='Location.csv':
+          location = item
+      elif item[-11:] =='Org-144.csv':
+          org = item
+      elif item[-9:] == 'Speed.csv':
+          speed = item
+      elif item[-10:] == 'Domain.csv':
+          domain = item
+      elif item[-13:] == 'SpeedCell.csv':
+          speedcell = item
+      else:
+          print "uh oh, something went wrong assigning parameters"
+  
+  org = '/'.join(org.split('\\'))
+  
+  return org
+value = ParamFunc()
+macroName = 'Org'
+if value == None:
+  return { macroName : '' }
+else:
+  return { macroName : str(value) }
+END_INCLUDE
+INCLUDE PYTHON
+def ParamFunc():
+  import os
+  
+  fileDir = 'C:/GEOIP'
+  
+  csvlist = []    
+  
+  for root, dirs, files in os.walk(fileDir):
+      for item in files:
+          if item[-3:] =="csv":
+              csvlist.append(root+'\\'+item)
+  
+  #use in FME if I can incorporate [144Location,144ISP,172speed,174domain,178net]
+  for item in csvlist:
+      if item[-12:] =='Location.csv':
+          location = item
+      elif item[-11:] =='Org-144.csv':
+          org = item
+      elif item[-9:] == 'Speed.csv':
+          speed = item
+      elif item[-10:] == 'Domain.csv':
+          domain = item
+      elif item[-13:] == 'SpeedCell.csv':
+          speedcell = item
+      else:
+          print "uh oh, something went wrong assigning parameters"
+  
+  speed = '/'.join(speed.split('\\'))
+  
+  return speed
+value = ParamFunc()
+macroName = 'Speed'
+if value == None:
+  return { macroName : '' }
+else:
+  return { macroName : str(value) }
+END_INCLUDE
+DEFAULT_MACRO 144Loc $(Location)
+GUI IGNORE MULTIFILE 144Loc CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 144 Loc File:
+DEFAULT_MACRO 172_Speed $(Speed)
+GUI IGNORE MULTIFILE 172_Speed CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 172 Speed File:
+DEFAULT_MACRO 144_ISP $(Org)
+GUI IGNORE MULTIFILE 144_ISP CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 144 ISP File:
+DEFAULT_MACRO 174_Domain $(Domain)
+GUI IGNORE MULTIFILE 174_Domain CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 174 Domain File:
+DEFAULT_MACRO 178_Net $(SpeedCell)
+GUI IGNORE MULTIFILE 178_Net CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Input 178 Net Speed File:
+DEFAULT_MACRO DestDataset_CSV C:\GEOIP
+GUI IGNORE DIRNAME DestDataset_CSV Destination CSV (CommaSeparatedValue) Folder:
+INCLUDE [ if {{$(Location)} == {}} { puts_real {Parameter 'Location' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(Domain)} == {}} { puts_real {Parameter 'Domain' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SpeedCell)} == {}} { puts_real {Parameter 'SpeedCell' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(Org)} == {}} { puts_real {Parameter 'Org' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(Speed)} == {}} { puts_real {Parameter 'Speed' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(144Loc)} == {}} { puts_real {Parameter '144Loc' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(172_Speed)} == {}} { puts_real {Parameter '172_Speed' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(144_ISP)} == {}} { puts_real {Parameter '144_ISP' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(174_Domain)} == {}} { puts_real {Parameter '174_Domain' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(178_Net)} == {}} { puts_real {Parameter '178_Net' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV)} == {}} { puts_real {Parameter 'DestDataset_CSV' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CSV
+MULTI_READER_KEYWORD{0} CSV_1
+MULTI_READER_GEN_DIRECTIVES{0} _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>col0%col1%col2<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,number<comma>10<comma>0<comma>number<comma>10<comma>0<comma>char<comma>36<comma>,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,NO,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>col0%col1%col2<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,col0<comma>number<comma>10<comma>0<comma>col1<comma>number<comma>10<comma>0<comma>col2<comma>char<comma>36<comma>,_FIELD_NAMES_AFTER_HEADER,yes,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,0
+MULTI_READER_TYPE{1} CSV
+MULTI_READER_KEYWORD{1} CSV_2
+MULTI_READER_GEN_DIRECTIVES{1} _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>startIpNum%endIpNum%locId%ISP%organization<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,number<comma>9<comma>0<comma>number<comma>9<comma>0<comma>number<comma>7<comma>0<comma>char<comma>51<comma><comma>char<comma>51<comma>,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,YES,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>startIpNum%endIpNum%locId%ISP%organization<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,startIpNum<comma>number<comma>9<comma>0<comma>endIpNum<comma>number<comma>9<comma>0<comma>locId<comma>number<comma>7<comma>0<comma>ISP<comma>char<comma>51<comma><comma>organization<comma>char<comma>51<comma>,_FIELD_NAMES_AFTER_HEADER,yes,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,2
+MULTI_READER_TYPE{2} CSV
+MULTI_READER_KEYWORD{2} CSV_3
+MULTI_READER_GEN_DIRECTIVES{2} _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>locId%country%region%city%postalCode%latitude%longitude%metroCode%areaCode<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,number<comma>6<comma>0<comma>char<comma>3<comma><comma>char<comma>3<comma><comma>char<comma>27<comma><comma>char<comma>7<comma><comma>number<comma>8<comma>4<comma>number<comma>9<comma>4<comma>number<comma>4<comma>0<comma>number<comma>4<comma>0,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,YES,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>locId%country%region%city%postalCode%latitude%longitude%metroCode%areaCode<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,locId<comma>number<comma>6<comma>0<comma>country<comma>char<comma>3<comma><comma>region<comma>char<comma>3<comma><comma>city<comma>char<comma>27<comma><comma>postalCode<comma>char<comma>7<comma><comma>latitude<comma>number<comma>8<comma>4<comma>longitude<comma>number<comma>9<comma>4<comma>metroCode<comma>number<comma>4<comma>0<comma>areaCode<comma>number<comma>4<comma>0,_FIELD_NAMES_AFTER_HEADER,yes,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,2
+MULTI_READER_TYPE{3} CSV
+MULTI_READER_KEYWORD{3} CSV_4
+MULTI_READER_GEN_DIRECTIVES{3} _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>col0%col1%col2%col3%col4<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,number<comma>10<comma>0<comma>number<comma>10<comma>0<comma>char<comma>15<comma><comma>char<comma>15<comma><comma>char<comma>10<comma>,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,NO,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>col0%col1%col2%col3%col4<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,col0<comma>number<comma>10<comma>0<comma>col1<comma>number<comma>10<comma>0<comma>col2<comma>char<comma>15<comma><comma>col3<comma>char<comma>15<comma><comma>col4<comma>char<comma>10<comma>,_FIELD_NAMES_AFTER_HEADER,NO,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,0
+MULTI_READER_TYPE{4} CSV
+MULTI_READER_KEYWORD{4} CSV_5
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CSV
+MULTI_WRITER_KEYWORD{0} CSV_6
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_1
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_1
+DEFAULT_MACRO SourceDataset_CSV_1 $(144Loc)
+GUI MULTIFILE SourceDataset_CSV_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source CSV (CommaSeparatedValue) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_1 number,6,0,char,3,,char,3,,char,27,,char,7,,number,8,4,number,9,4,number,4,0,number,4,0
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_1 YES
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_1 yes
+DEFAULT_MACRO _EXTENSION_CSV_1 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_1 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_1 no
+CSV_1_SCHEMA number,6,0,char,3,,char,3,,char,27,,char,7,,number,8,4,number,9,4,number,4,0,number,4,0
+DEFAULT_MACRO _SKIP_LINES_CSV_1 2
+CSV_1_SKIP_LINES $(_SKIP_LINES_CSV_1)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_1 0
+CSV_1_SKIP_FOOTER $(_SKIP_FOOTER_CSV_1)
+CSV_1_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_1)
+CSV_1_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_1)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_1 yes
+CSV_1_STRIP_QUOTES $(_STRIP_QUOTES_CSV_1)
+CSV_1_SEPARATOR (",")
+CSV_1_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_1 no
+CSV_1_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_1)
+CSV_1_SEQUENCED no
+CSV_1_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_1)
+CSV_1_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_1)
+DEFAULT_MACRO SORT_GROUP_CSV_1 NO
+CSV_1_SORT_GROUP $(SORT_GROUP_CSV_1)
+DEFAULT_MACRO _SORT_PARAMS_CSV_1 
+CSV_1_SORT_PARAMS $(_SORT_PARAMS_CSV_1)
+DEFAULT_MACRO FILTER_GROUP_CSV_1 NO
+CSV_1_FILTER_GROUP $(FILTER_GROUP_CSV_1)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_1 
+CSV_1_FILTER_PARAMS $(_FILTER_PARAMS_CSV_1)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_1_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_1 
+CSV_1_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_1)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_1 
+CSV_1_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_1)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_1 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_1 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_1 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_1 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_1 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_1 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES locId%country%region%city%postalCode%latitude%longitude%metroCode%areaCode"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_1 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_1 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES locId%country%region%city%postalCode%latitude%longitude%metroCode%areaCode"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_1 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_1 SYSTEM%* Character Encoding:
+CSV_1_ENCODING $(_ENCODING_CSV_1)
+CSV_1_DATASET "$(SourceDataset_CSV_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+DEFAULT_MACRO SourceDataset_CSV_2 $(144_ISP)
+GUI MULTIFILE SourceDataset_CSV_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source CSV (CommaSeparatedValue) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_2 number,9,0,number,9,0,number,7,0,char,51,,char,51,
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_2 YES
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_2 yes
+DEFAULT_MACRO _EXTENSION_CSV_2 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_2 no
+CSV_2_SCHEMA number,9,0,number,9,0,number,7,0,char,51,,char,51,
+DEFAULT_MACRO _SKIP_LINES_CSV_2 2
+CSV_2_SKIP_LINES $(_SKIP_LINES_CSV_2)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_2 0
+CSV_2_SKIP_FOOTER $(_SKIP_FOOTER_CSV_2)
+CSV_2_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_2)
+CSV_2_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_2)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_2 yes
+CSV_2_STRIP_QUOTES $(_STRIP_QUOTES_CSV_2)
+CSV_2_SEPARATOR (",")
+CSV_2_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_2 no
+CSV_2_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_2)
+CSV_2_SEQUENCED no
+CSV_2_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2)
+CSV_2_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_2)
+DEFAULT_MACRO SORT_GROUP_CSV_2 NO
+CSV_2_SORT_GROUP $(SORT_GROUP_CSV_2)
+DEFAULT_MACRO _SORT_PARAMS_CSV_2 
+CSV_2_SORT_PARAMS $(_SORT_PARAMS_CSV_2)
+DEFAULT_MACRO FILTER_GROUP_CSV_2 NO
+CSV_2_FILTER_GROUP $(FILTER_GROUP_CSV_2)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_2 
+CSV_2_FILTER_PARAMS $(_FILTER_PARAMS_CSV_2)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_2_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_2 
+CSV_2_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_2)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_2 
+CSV_2_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_2)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_2 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_2 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_2 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_2 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_2 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES startIpNum%endIpNum%locId%ISP%organization"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_2 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES startIpNum%endIpNum%locId%ISP%organization"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_2 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_2 SYSTEM%* Character Encoding:
+CSV_2_ENCODING $(_ENCODING_CSV_2)
+CSV_2_DATASET "$(SourceDataset_CSV_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_3
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_3
+DEFAULT_MACRO SourceDataset_CSV_3 $(174_Domain)
+GUI MULTIFILE SourceDataset_CSV_3 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source CSV (CommaSeparatedValue) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_3 number,10,0,number,10,0,char,36,
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_3 NO
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_3 yes
+DEFAULT_MACRO _EXTENSION_CSV_3 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_3 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_3 no
+CSV_3_SCHEMA number,10,0,number,10,0,char,36,
+DEFAULT_MACRO _SKIP_LINES_CSV_3 0
+CSV_3_SKIP_LINES $(_SKIP_LINES_CSV_3)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_3 0
+CSV_3_SKIP_FOOTER $(_SKIP_FOOTER_CSV_3)
+CSV_3_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_3)
+CSV_3_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_3)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_3 yes
+CSV_3_STRIP_QUOTES $(_STRIP_QUOTES_CSV_3)
+CSV_3_SEPARATOR (",")
+CSV_3_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_3 no
+CSV_3_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_3)
+CSV_3_SEQUENCED no
+CSV_3_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_3)
+CSV_3_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_3)
+DEFAULT_MACRO SORT_GROUP_CSV_3 NO
+CSV_3_SORT_GROUP $(SORT_GROUP_CSV_3)
+DEFAULT_MACRO _SORT_PARAMS_CSV_3 
+CSV_3_SORT_PARAMS $(_SORT_PARAMS_CSV_3)
+DEFAULT_MACRO FILTER_GROUP_CSV_3 NO
+CSV_3_FILTER_GROUP $(FILTER_GROUP_CSV_3)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_3 
+CSV_3_FILTER_PARAMS $(_FILTER_PARAMS_CSV_3)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_3_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_3 
+CSV_3_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_3)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_3 
+CSV_3_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_3)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_3 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_3 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_3 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_3 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_3 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_3 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_3 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_3 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_3 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_3 SYSTEM%* Character Encoding:
+CSV_3_ENCODING $(_ENCODING_CSV_3)
+CSV_3_DATASET "$(SourceDataset_CSV_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_4"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_4
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_4 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_4
+DEFAULT_MACRO SourceDataset_CSV_4 $(178_Net)
+GUI MULTIFILE SourceDataset_CSV_4 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source CSV (CommaSeparatedValue) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_4 number,10,0,number,10,0,char,15,,char,15,,char,10,
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_4 NO
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_4 NO
+DEFAULT_MACRO _EXTENSION_CSV_4 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_4 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_4 no
+CSV_4_SCHEMA number,10,0,number,10,0,char,15,,char,15,,char,10,
+DEFAULT_MACRO _SKIP_LINES_CSV_4 0
+CSV_4_SKIP_LINES $(_SKIP_LINES_CSV_4)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_4 0
+CSV_4_SKIP_FOOTER $(_SKIP_FOOTER_CSV_4)
+CSV_4_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_4)
+CSV_4_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_4)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_4 yes
+CSV_4_STRIP_QUOTES $(_STRIP_QUOTES_CSV_4)
+CSV_4_SEPARATOR (",")
+CSV_4_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_4 no
+CSV_4_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_4)
+CSV_4_SEQUENCED no
+CSV_4_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_4)
+CSV_4_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_4)
+DEFAULT_MACRO SORT_GROUP_CSV_4 NO
+CSV_4_SORT_GROUP $(SORT_GROUP_CSV_4)
+DEFAULT_MACRO _SORT_PARAMS_CSV_4 
+CSV_4_SORT_PARAMS $(_SORT_PARAMS_CSV_4)
+DEFAULT_MACRO FILTER_GROUP_CSV_4 NO
+CSV_4_FILTER_GROUP $(FILTER_GROUP_CSV_4)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_4 
+CSV_4_FILTER_PARAMS $(_FILTER_PARAMS_CSV_4)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_4_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_4 
+CSV_4_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_4)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_4 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_4 
+CSV_4_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_4)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_4 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_4 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_4 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_4 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_4 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_4 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_4 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2%col3%col4"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_4 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_4 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2%col3%col4"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_4 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_4 SYSTEM%* Character Encoding:
+CSV_4_ENCODING $(_ENCODING_CSV_4)
+CSV_4_DATASET "$(SourceDataset_CSV_4)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_5"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_5
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_5 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_5
+DEFAULT_MACRO SourceDataset_CSV_5 $(172_Speed)
+GUI MULTIFILE SourceDataset_CSV_5 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source CSV (CommaSeparatedValue) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_5 number,10,0,number,10,0,char,5,
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_5 NO
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_5 no
+DEFAULT_MACRO _EXTENSION_CSV_5 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_5 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_5 no
+CSV_5_SCHEMA number,10,0,number,10,0,char,5,
+DEFAULT_MACRO _SKIP_LINES_CSV_5 0
+CSV_5_SKIP_LINES $(_SKIP_LINES_CSV_5)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_5 0
+CSV_5_SKIP_FOOTER $(_SKIP_FOOTER_CSV_5)
+CSV_5_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_5)
+CSV_5_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_5)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_5 yes
+CSV_5_STRIP_QUOTES $(_STRIP_QUOTES_CSV_5)
+CSV_5_SEPARATOR (",")
+CSV_5_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_5 no
+CSV_5_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_5)
+CSV_5_SEQUENCED no
+CSV_5_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_5)
+CSV_5_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_5)
+DEFAULT_MACRO SORT_GROUP_CSV_5 NO
+CSV_5_SORT_GROUP $(SORT_GROUP_CSV_5)
+DEFAULT_MACRO _SORT_PARAMS_CSV_5 
+CSV_5_SORT_PARAMS $(_SORT_PARAMS_CSV_5)
+DEFAULT_MACRO FILTER_GROUP_CSV_5 NO
+CSV_5_FILTER_GROUP $(FILTER_GROUP_CSV_5)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_5 
+CSV_5_FILTER_PARAMS $(_FILTER_PARAMS_CSV_5)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_5_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_5 
+CSV_5_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_5)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_5 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_5 
+CSV_5_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_5)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_5 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_5 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_5 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_5 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_5 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_5 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_5 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_5 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_5 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES col0%col1%col2"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_5 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_5 SYSTEM%* Character Encoding:
+CSV_5_ENCODING $(_ENCODING_CSV_5)
+CSV_5_DATASET "$(SourceDataset_CSV_5)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_6"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_6
+# ============================================================================
+# The following GUI line prompts for a folder where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_6 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_6
+DEFAULT_MACRO DestDataset_CSV_6 $(DestDataset_CSV)
+GUI DIRNAME DestDataset_CSV_6 Destination CSV (CommaSeparatedValue) Folder:
+CSV_6_PLUGIN_MAX_CHANNELS 100
+CSV_6_ALLOW_TYPE_TRUNCATION yes
+CSV_6_PERMISSIVE_TYPES yes
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_6 csv
+CSV_6_EXTENSION "$(CSV_OUT_EXTENSION_CSV_6)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_6 Extension:
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_6 No
+CSV_6_APPEND "$(CSV_OUT_APPEND_CSV_6)"
+GUI CHECKBOX CSV_OUT_APPEND_CSV_6 Yes%No Append to File:
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_6 yes
+CSV_6_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_6)"
+GUI CHECKBOX CSV_OUT_FIELD_NAMES_CSV_6 yes%no Output Field Names on First Line:
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_6 ,
+CSV_6_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_6)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_6 ,%;%|%space%tab Separator Character:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_6 
+CSV_6_ENCODING "$(CSV_OUT_ENCODING_CSV_6)"
+GUI OPTIONAL STRING_OR_ENCODING CSV_OUT_ENCODING_CSV_6 SYSTEM%* Character Encoding:
+# =====================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO CSV_OUT_WRITE_UTF8_BOM_CSV_6 yes
+CSV_6_WRITE_UTF8_BOM "$(CSV_OUT_WRITE_UTF8_BOM_CSV_6)"
+GUI CHOICE CSV_OUT_WRITE_UTF8_BOM_CSV_6 yes%no Write UTF-8 Byte Order Mark
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO CSV_OUT_DESTINATION_DATASETTYPE_VALIDATION_CSV_6 Yes
+CSV_6_DESTINATION_DATASETTYPE_VALIDATION "$(CSV_OUT_DESTINATION_DATASETTYPE_VALIDATION_CSV_6)"
+# =====================================================================
+DEFAULT_MACRO CSV_OUT_QUOTE_OUTPUT_CSV_6 if_needed
+CSV_6_QUOTE_OUTPUT "$(CSV_OUT_QUOTE_OUTPUT_CSV_6)"
+GUI CHOICE CSV_OUT_QUOTE_OUTPUT_CSV_6 yes%if_needed%no Quote Output Values:
+DEFAULT_MACRO CSV_OUT_QUOTE_FIELD_NAMES_CSV_6 no
+CSV_6_QUOTE_FIELD_NAMES "$(CSV_OUT_QUOTE_FIELD_NAMES_CSV_6)"
+GUI CHOICE CSV_OUT_QUOTE_FIELD_NAMES_CSV_6 yes%no Quote Field Names:
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_6 
+CSV_6_END_OF_LINE "$(CSV_OUT_END_OF_LINE_CSV_6)"
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_6 Windows%Unix%Macintosh Line Termination:
+CSV_6_DATASET "$(DestDataset_CSV_6)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)GEOIP_Download_Transform.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+LOG_MAX_PRECISION Yes
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_1 CSV_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_2 CSV_2
+DEFAULT_MACRO DATASET_KEYWORD_CSV_3 CSV_3
+DEFAULT_MACRO DATASET_KEYWORD_CSV_4 CSV_4
+DEFAULT_MACRO DATASET_KEYWORD_CSV_5 CSV_5
+DEFAULT_MACRO DATASET_KEYWORD_CSV_6 CSV_6
+# -------------------------------------------------------------------------
+
+CSV_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV_4_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV_5_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME GEOIP_Download_Transform
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+CSV_1_DEF CSV   locId                        number(6,0)   country                      char(3)   region                       char(3)   city                         char(27)   postalCode                   char(7)   latitude                     number(8,4)   longitude                    number(9,4)   metroCode                    number(4,0)   areaCode                     number(4,0)
+# -------------------------------------------------------------------------
+CSV_2_DEF CSV   startIpNum                   number(9,0)   endIpNum                     number(9,0)   locId                        number(7,0)   ISP                          char(51)   organization                 char(51)
+# -------------------------------------------------------------------------
+CSV_3_DEF CSV   col0                         number(10,0)   col1                         number(10,0)   col2                         char(36)
+# -------------------------------------------------------------------------
+CSV_4_DEF CSV   col0                         number(10,0)   col1                         number(10,0)   col2                         char(15)   col3                         char(15)   col4                         char(10)
+# -------------------------------------------------------------------------
+CSV_5_DEF CSV   col0                         number(10,0)   col1                         number(10,0)   col2                         char(5)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *    ROUTE CSV CSV_1::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV_1) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV CSV_2::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV_2) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV CSV_3::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV_3) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV CSV_4::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV_4) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV CSV_5::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV_5) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CSV_1_MERGE_DEF CSV_1::CSV EXACT CSV
+CSV_2_MERGE_DEF CSV_2::CSV EXACT CSV
+CSV_3_MERGE_DEF CSV_3::CSV EXACT CSV
+CSV_4_MERGE_DEF CSV_4::CSV EXACT CSV
+CSV_5_MERGE_DEF CSV_5::CSV EXACT CSV
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV_1) Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV_1)    OUTPUT FEATURE_TYPE CSV_CSV_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV_2) Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV_2)    OUTPUT FEATURE_TYPE CSV_CSV_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV_3) Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV_3)    OUTPUT FEATURE_TYPE CSV_CSV_3
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV_4) Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV_4)    OUTPUT FEATURE_TYPE CSV_CSV_4
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV_5) Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV_5)    OUTPUT FEATURE_TYPE CSV_CSV_5
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_3    INPUT  FEATURE_TYPE CSV_CSV_5    OUTPUT FEATURE_TYPE AttributeRenamer_3_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, col0,startIpNum,"",col1,endIpNum,"",col2,speed,"")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE CSV_CSV_4    OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, col0,startIpNum,"",col1,endIpNum,"",col4,connection,"")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE CSV_CSV_3    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, col0,startIpNum,"",col1,endIpNum,"",col2,domain,"")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer_4    INPUT  FEATURE_TYPE CSV_CSV_2    OUTPUT FEATURE_TYPE AttributeRenamer_4_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, organization,org,"")
+
+
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeRenamer_4_OUTPUT    INPUT REFERENCEE FEATURE_TYPE CSV_CSV_1    REFERENCE_INFO $(FeatureMerger_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>locId<closeparen>,FeatureMerger) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>locId<closeparen>,FeatureMerger) AUTO    IGNORE_NULLS "Yes"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_MERGED
+
+# -------------------------------------------------------------------------
+
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_2_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger_2    INPUT REFERENCER FEATURE_TYPE FeatureMerger_MERGED    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_2_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeRenamer_3_OUTPUT    REFERENCE_INFO $(FeatureMerger_2_REFERENCE_INFO)    REFERENCE_TABLE @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>startIpNum<closeparen>,FeatureMerger_2) @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>startIpNum<closeparen>,FeatureMerger_2) AUTO    IGNORE_NULLS "Yes"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    REFERENCEES_FIRST No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_2_MERGED    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_2_NOT_MERGED
+
+# -------------------------------------------------------------------------
+
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE FeatureMerger_2_MERGED    INPUT  FEATURE_TYPE FeatureMerger_2_NOT_MERGED    SYMBOL_NAME ipMath    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fmeobjects<lf>def<space>ipMath<openparen>feature<closeparen>:<lf><space><space><space><space>start<space>=<space>feature.getAttribute<openparen><quote>startIpNum<quote><closeparen><space><lf><space><space><space><space>ipnum<space>=<space>int<openparen>start<closeparen><lf><lf><lf><space><space><space><space>o1<space>=<space>int<openparen><space>ipnum<space><solidus><space>16777216<space><closeparen><space>%<space>256<lf><space><space><space><space>o2<space>=<space>int<openparen><space>ipnum<space><solidus><space>65536<space><space><space><space><closeparen><space>%<space>256<lf><space><space><space><space>o3<space>=<space>int<openparen><space>ipnum<space><solidus><space>256<space><space><space><space><space><space><closeparen><space>%<space>256<lf><space><space><space><space>o4<space>=<space>int<openparen><space>ipnum<space><space><space><space><space><space><space><space><space><space><space><space><closeparen><space>%<space>256<lf><space><lf><space><space><space><space>address<space>=<space><openparen><space>str<openparen>o1<closeparen><space>+<space><apos>.<apos><comma><space>str<openparen>o2<closeparen>+<space><apos>.<apos><comma><space>str<openparen>o3<closeparen>+<space><apos>.<apos><comma><space>str<openparen>o4<closeparen><space><closeparen><lf><lf><space><space><space><space>ipAddress<space>=<space>address<openbracket>0<closebracket><space>+<space>address<openbracket>1<closebracket><space>+<space>address<openbracket>2<closebracket><space>+<space>address<openbracket>3<closebracket><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>startIpAdd<quote><comma><space>ipAddress<closeparen><lf><lf><space><space><space><space>end<space>=<space>feature.getAttribute<openparen><quote>endIpNum<quote><closeparen><lf><space><space><space><space>ipnum2<space>=<space>int<openparen>end<closeparen><lf><space><space><space><space><lf><space><space><space><space>p1<space>=<space>int<openparen><space>ipnum2<space><solidus><space>16777216<space><closeparen><space>%<space>256<lf><space><space><space><space>p2<space>=<space>int<openparen><space>ipnum2<space><solidus><space>65536<space><space><space><space><closeparen><space>%<space>256<lf><space><space><space><space>p3<space>=<space>int<openparen><space>ipnum2<space><solidus><space>256<space><space><space><space><space><space><closeparen><space>%<space>256<lf><space><space><space><space>p4<space>=<space>int<openparen><space>ipnum2<space><space><space><space><space><space><space><space><space><space><space><space><closeparen><space>%<space>256<lf><space><lf><space><space><space><space>address2<space>=<space><openparen><space>str<openparen>p1<closeparen><space>+<space><apos>.<apos><comma><space>str<openparen>p2<closeparen>+<space><apos>.<apos><comma><space>str<openparen>p3<closeparen>+<space><apos>.<apos><comma><space>str<openparen>p4<closeparen><space><closeparen><lf><lf><space><space><space><space>ipAddress2<space>=<space>address2<openbracket>0<closebracket><space>+<space>address2<openbracket>1<closebracket><space>+<space>address2<openbracket>2<closebracket><space>+<space>address2<openbracket>3<closebracket><space><lf><space><space><space><space>feature.setAttribute<openparen><quote>endIpAdd<quote><comma><space>ipAddress2<closeparen>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC PythonCaller_OUTPUT TO CSV __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>GEOIP_Complete<closeparen> GEOMETRY   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+CSV_6_DEF GEOIP_Complete   csv_append_mode              INHERIT_FROM_WRITER   csv_field_names              INHERIT_FROM_WRITER   locId                        number(31,15)   country                      char(3)   region                       char(3)   city                         char(27)   postalCode                   char(7)   metroCode                    number(31,15)   areaCode                     number(31,15)   startIpNum                   char(50)   endIpNum                     char(50)   startIpAdd                   char(50)   endIpAdd                     char(50)   latitude                     number(31,15)   longitude                    number(31,15)   ISP                          char(50)   org                          char(50)   domain                       char(50)   connection                   char(50)   speed                        char(50)
